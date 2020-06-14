@@ -18,7 +18,7 @@ function AboutComp() {
           <Row>
           <Col><CardComp id="1" judul="Belajar react" tanggal="22/06/2020"/></Col>                  
           <Col><CardComp id="2" judul="Belajar Golang" tanggal="25/06/2020"/></Col>
-          <Col><CardComp id="3" judul="Belajar PHP" tanggal="27/06/2020"/></Col>
+          <Col><CardComp id="3" judul="Belajar PH" tanggal="27/06/2020"/></Col>
           </Row>
         </Container>
 
