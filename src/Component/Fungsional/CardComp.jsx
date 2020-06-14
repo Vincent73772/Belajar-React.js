@@ -17,7 +17,7 @@ function CardComp(props) {
             <Button>
                 <Link to = {
                     {
-                    pathname : '/detail/${props.id}',
+                    pathname : '/detai/${props.id}',
                     state : {
                         judul: props.judul,
                         tanggal: props.tanggal
