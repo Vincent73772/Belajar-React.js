@@ -1,25 +1,27 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter, Route, Switch } from 'react-router-dom'
+//import BootstrapComp from './Component/Class/BootstrapComp';
+import NavbarComp from './Component/Fungsional/NavbarComp';
+//import { BrowserRouter, Route } from 'react-router-dom';
+import Homepage from './Component/Fungsional/HomePage';
+import About from './Component/Fungsional/AboutComp';
+import AboutComp from './Component/Fungsional/AboutComp';
+import DetailComp from './Component/Fungsional/DetailComp';
+//import logo from './logo.svg';
+//import './App.css';
+//import Home from './Componen/Fungsional/Home';
 
-function App() {
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <NavbarComp />
+      <Switch>
+        <Route exact path="/" component={Homepage} />
+        <Route exact path="/about" component={About} />
+        <Route exact path="/detail/:id" component={DetailComp} />
+      </Switch>
+    </BrowserRouter>
   );
 }
 
