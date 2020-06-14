@@ -3,7 +3,7 @@ import React, { Component } from 'react'
 
 class GrandChild extends Component {
     constructor(props) {
-        super(prop)
+        super(props)
 
         this.state = {
 
